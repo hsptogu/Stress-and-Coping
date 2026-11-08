@@ -339,6 +339,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero .top { margin-bottom: 32px; }
   .orgrow > div:first-child { padding: 28px 24px; }
 }
+
+/* Темы без номеров */
+.topics li { grid-template-columns: 22px 1fr !important; align-items: start; }
+.topics li::before { content: "" !important; width: 9px; height: 9px; background: var(--accent); margin-top: .5em; }
 </style>
 </head>
 <body>
@@ -386,7 +390,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
       <div>
         <div class="head" style="margin-bottom:0">
           <span class="eyebrow">О конференции</span>
-          <h2>Восемь направлений обсуждения</h2>
+          <h2>Вопросы для обсуждения</h2>
         </div>
         <div class="perks">
           <div class="perk">
@@ -444,7 +448,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Участие</span>
-        <h2>Три шага до публикации</h2>
+        <h2>Как принять участие</h2>
       </div>
       <div class="steps">
         <div class="step">
@@ -463,9 +467,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
           <div class="copyrow"><code>Актуальные проблемы психологии стресса 2026</code><button class="mini" data-copy="Актуальные проблемы психологии стресса 2026">Копировать</button></div>
         </div>
         <div class="step">
-          <span class="n">3</span>
-          <h3>Выступите на конференции</h3>
-          <p>10–11 декабря 2026 года в ТОГУ, Хабаровск. Участники получат сертификат, статьи войдут в сборник научных трудов.</p>
+          <h3>10–11 декабря 2026 года</h3>
+          <p>Конференция состоится на базе высшей школы психологии педагогического института ТОГУ, Хабаровск. Участники получат сертификат участия и возможность опубликовать статью в сборнике научных трудов (издание РИНЦ).</p>
         </div>
       </div>
     </div>
